@@ -44,7 +44,7 @@ body {
 }
 
 .hamburger {
-    /*content: '☰';	*/
+    /*content: '☰'; */
     color: #c9aa71;
     cursor: pointer;
     font-size: 26px;
@@ -54,6 +54,14 @@ body {
     text-align: center;
     transition: none;
     width: 26px;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
 }
 
 @media (min-width: 768px) {
@@ -65,17 +73,18 @@ body {
         margin: 10px .25em;
         vertical-align: top;
     }
+    .navbar-collapse-desktop {
+        margin: auto;
+        width: 700px;
+    }
 }
 
 .navbar-default .navbar-toggle,
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-collapse {
     border: none;
     background-color: #121212;
     float: none;
-}
-
-.navbar-default .navbar-collapse {
-    border: none;
 }
 
 .heading-default {
